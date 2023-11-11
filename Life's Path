@@ -1,0 +1,27 @@
+import random
+
+def life_path_game():
+print("Welcome to the Life's Path Game!")
+print("Embark on a journey through various life stages, making decisions and facing challenges along the way.")
+
+life_stages = [
+"You're starting a new job. Do you prioritize a work-related training or attend a family event?",
+"You have the opportunity to move to a new city for a job. Do you choose the familiar or embrace the unknown?",
+"You're at a crossroads in your career. Do you pursue a promotion at your current job or explore new opportunities elsewhere?"
+]
+
+decisions = ["work training", "family event", "familiar city", "unknown city", "promotion", "new opportunities"]
+
+score = 0
+chosen_stages = random.sample(life_stages, 2) # 
+for i in range(len(chosen_stages)):
+decision = input(chosen_stages[i] + " ").lower()
+if decision in decisions:
+print("Your decision has been noted. It's one step on your life's path.")
+score += 1
+else:
+print("Please make a valid decision for your life stage.")
+
+print("Congratulations! You've navigated through important life choices. Your final score is:", score)
+
+life_path_game()
