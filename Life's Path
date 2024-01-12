@@ -13,7 +13,7 @@ life_stages = [
 decisions = ["work training", "family event", "familiar city", "unknown city", "promotion", "new opportunities"]
 
 score = 0
-chosen_stages = random.sample(life_stages, 3) # 1122131323032
+chosen_stages = random.sample(life_stages, 3) # 112213123032
 for i in range(len(chosen_stages)):
 decision = input(chosen_stages[i] + " ").lower()
 if decision in decisions:
